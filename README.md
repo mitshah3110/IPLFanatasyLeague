@@ -1,17 +1,22 @@
 
-IPL Fantasy League (Private)
+IPL FRIENDS FANTASY LEAGUE — COMPLETE ADMIN SYSTEM
 
-Deployment:
-1. Upload this project to a GitHub repository.
-2. Import the repository into Vercel.
-3. Vercel will automatically detect Next.js and deploy.
+Steps:
 
-Pages:
-/       Home
-/teams  Team list
+1. Upload this project to GitHub
+2. Import repository in Vercel
+3. Add env variables
+   NEXT_PUBLIC_SUPABASE_URL
+   NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-Future:
-- Player database
-- Fantasy scoring engine
-- Leaderboard
-- ESPN Cricinfo data fetch
+4. Run DATABASE_SCHEMA.sql inside Supabase SQL editor
+
+Admin usage:
+
+/admin
+
+Enter:
+- Match number
+- Cricinfo scorecard URL
+
+Click "Process Match"

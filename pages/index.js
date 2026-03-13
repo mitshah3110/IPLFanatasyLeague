@@ -1,15 +1,15 @@
 
-import teams from '../data/teams.json'
-
 export default function Home(){
   return (
-    <div style={{fontFamily:"Arial", padding:40}}>
-      <h1>IPL Private Fantasy League</h1>
-      <p>Teams participating in the league:</p>
+    <div style={{padding:40,fontFamily:"Arial"}}>
+      <h1>IPL FRIENDS FANTASY LEAGUE</h1>
+      <p>Admin managed fantasy league</p>
+
       <ul>
-        {teams.teams.map(t=> <li key={t}>{t}</li>)}
+        <li><a href="/leaderboard">Leaderboard</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/admin">Admin</a></li>
       </ul>
-      <p>Leaderboard and scoring engine will appear here.</p>
     </div>
   )
 }
